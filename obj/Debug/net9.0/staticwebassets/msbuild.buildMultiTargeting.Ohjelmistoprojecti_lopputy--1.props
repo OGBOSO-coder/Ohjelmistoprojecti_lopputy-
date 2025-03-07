@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Ohjelmistoprojecti_lopputy--1.props" />
+</Project>
