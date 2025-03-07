@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ohjelmistoprojecti_lopputy--1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3ec19843f003af409b3be276ac586b400fda97d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e68531becddf7b9f75ae63b8c9d7f346bd3e436")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ohjelmistoprojecti_lopputy--1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ohjelmistoprojecti_lopputy--1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
