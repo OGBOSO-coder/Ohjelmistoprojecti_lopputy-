@@ -1,1 +1,90 @@
-<h1>moi</h1>
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game site</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+        }
+
+        .header {
+            grid-column: span 8;
+            background:lightblue;          
+            color:black;
+            height: 100px;
+            padding: 20px;
+            margin-left: 400px;
+            text-align: center;
+            font-size: 34px;
+        }
+
+        .header2{
+            grid-column: span 12;
+            background: white;          
+            color:black;
+            height: 100px;
+            padding: 20px;
+            text-align: center;
+            font-size: 34px;
+        }
+
+        
+
+        .content1, .content2, .content3, .content4 {
+            grid-column: span 3;
+                        
+            background: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            height: 100px;
+        }
+
+        .footer {
+            grid-column: span 12;
+            background: #0073e6;          
+            color:black;
+            padding: 20px;
+            text-align: center;
+            font-size: 34px;
+
+        }
+
+        @media (max-width: 768px) {
+            .content1, .content2 {
+                grid-column: span 12;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">GigaMega_GameSite</div>
+        <div class="header">Pelilista</div>
+        <div class="content1">Hirsipuu</div>
+        <div class="content2">Sisältö 2</div>
+        <div class="content2">Sisältö 3</div>
+        <div class="content2">Sisältö 4</div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
