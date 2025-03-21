@@ -15,6 +15,8 @@
 
         body {
             font-family: Arial, sans-serif;
+            background-color: lightcyan;
+
         }
 
         .container {
@@ -24,6 +26,7 @@
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             gap: 10px;
+            background: white;
         }
 
         .header {
@@ -54,16 +57,21 @@
         .content1, .content2, .content3, .content4 {
             grid-column: span 3;
             grid-row: 3;
-            background:white;            
+            border: 1px solid red;
+            border-radius: 15px;
+            background: none;    
+            border-color: red;        
             text-align: center;
             font-size: 24px;
             height: 100px;
+            cursor: pointer;
         }
 
         .acontent {
             grid-column: span 12;
             height: 500px;
             background-color: rgb(175, 235, 175);
+            border:1px solid black;
             font-size: 40px;
             color: black;
             text-align: center;
@@ -94,7 +102,8 @@
     <div class="container">
         <div class="header">GigaMega_GameSite</div>
         <div class="header2">Pelilista</div>
-        <div class="content1"><a href="Hirsipuupeli/Hirsipuu.html"><img src="Kuvat/hirsipuu.png" alt="Hirsipuukuva" height="100" width="140"></a> </div>
+        <div class="content1"><a href="Hirsipuupeli/Hirsipuu.html"><img src="Kuvat/hirsipuu.png" alt="Hirsipuukuva" height="100" width="140">
+        </a> </div>
         <div class="content2">*Peli 2* TBA</div>
         <div class="content3">*Peli 3* TBA </div>
         <div class="content4">*Peli 4* TBA </div>
