@@ -1,1 +1,3 @@
 testi
+Saa sitten tähän vaikka listata ideoita ja näkemyksiä sivuston ulkoasuun liittyen
+Yritin muokata indexiä niin että se käyttäs style.css tiedostoo.. En saanu toimii jostain syystä.. Meni hermo :D 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game site</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+   
 
     <style>
         * {
@@ -33,39 +33,53 @@
             height: 100px;
             padding: 20px;
             margin-left: 400px;
+            margin-bottom: 20px;
             text-align: center;
             font-size: 34px;
         }
 
         .header2{
-            grid-column: span 12;
-            background: white;          
+            grid-column: span 8;
+            margin-left: 400px;
+            background: lightblue;                      
             color:black;
             height: 100px;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
-            font-size: 34px;
+            font-size: 28px;
         }
 
         
 
         .content1, .content2, .content3, .content4 {
             grid-column: span 3;
-                        
-            background: #f0f0f0;
-            padding: 20px;
+            grid-row: 3;
+            background:white;            
             text-align: center;
             font-size: 24px;
             height: 100px;
         }
 
+        .acontent {
+            grid-column: span 12;
+            height: 500px;
+            background-color: rgb(175, 235, 175);
+            font-size: 40px;
+            color: black;
+            text-align: center;
+            padding: 250px;
+            
+
+        }
+
         .footer {
             grid-column: span 12;
-            background: #0073e6;          
+            height: 100px;
+            background:white;          
             color:black;
-            padding: 20px;
+            align-self: center;
             text-align: center;
-            font-size: 34px;
+            font-size: 20px;
 
         }
 
@@ -79,12 +93,13 @@
 <body>
     <div class="container">
         <div class="header">GigaMega_GameSite</div>
-        <div class="header">Pelilista</div>
-        <div class="content1">Hirsipuu</div>
-        <div class="content2">Sisältö 2</div>
-        <div class="content2">Sisältö 3</div>
-        <div class="content2">Sisältö 4</div>
-        <div class="footer"></div>
+        <div class="header2">Pelilista</div>
+        <div class="content1"><a href="Hirsipuupeli/Hirsipuu.html"><img src="Kuvat/hirsipuu.png" alt="Hirsipuukuva" height="100" width="140"></a> </div>
+        <div class="content2">*Peli 2* TBA</div>
+        <div class="content3">*Peli 3* TBA </div>
+        <div class="content4">*Peli 4* TBA </div>
+        <div class="acontent">Tähän sisältöä myöhemmin ONGFRFR</div>
+        <div class="footer"> täällä on footer</div>
     </div>
 </body>
 </html>
