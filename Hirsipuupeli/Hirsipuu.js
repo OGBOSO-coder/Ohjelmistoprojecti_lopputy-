@@ -8,6 +8,12 @@ document.getElementById('arvattavaSana').textContent = arvattuSana;
 document.getElementById('elama').textContent = eläma;
 document.getElementById('arvatutKirjaimet').textContent = '';
 
+document.addEventListener('keydown', function(event) {
+    console.log(event.key); // Logs the key pressed
+    if (event.key === "Enter") {
+        Tarkastaja(); // Calls the Tarkastaja function when Enter is pressed
+    }
+});
 function Tarkastaja() {
     var arvaus = document.getElementById('arvaus').value.toLowerCase();
     var uusiArvattuSana = '';
