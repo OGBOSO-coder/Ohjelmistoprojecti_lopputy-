@@ -2,16 +2,23 @@
 var sanat = ["kissa", "koira", "auto", "talo", "koulu", "tietokone", "puhelin", "kukka", "kirja", "lehti"];
 var arvattavaSana = sanat[Math.floor(Math.random() * sanat.length)];
 var eläma = 6;
-var arvattuSana = Array(arvattavaSana.length).fill('_').join('');
+var arvattuSana = Array(arvattavaSana.length).fill('_ ').join('');
 
 document.getElementById('arvattavaSana').textContent = arvattuSana;
 document.getElementById('elama').textContent = eläma;
 document.getElementById('arvatutKirjaimet').textContent = '';
 
-document.addEventListener('keydown', function(event) {
-    console.log(event.key); // Logs the key pressed
-    if (event.key === "Enter") {
-        Tarkastaja(); // Calls the Tarkastaja function when Enter is pressed
+document.getElementById('arvaus').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        // Prevent the default behavior (e.g., form submission)
+        event.preventDefault();
+        // Trigger the button's click event
+        if (document.getElementById('arvaus').value.trim() !== '') {
+            document.getElementById('arvaaButton').click();
+        }
+        else {
+            alert("Anna kirjain!");
+        }
     }
 });
 function Tarkastaja() {
