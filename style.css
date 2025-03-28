@@ -6,9 +6,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: lightcyan;
+    background-color: lightslategray;
     
 }
+
 
 .container {
     width: 100%;
@@ -18,24 +19,24 @@ body {
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
     background: white;
+    
 }
 
 .header {
-    grid-column: span 8;
+    grid-column: span 16;
     background:lightblue;          
-    color:black;
-    height: 100px;
-    padding: 20px;
-    margin-left: 400px;
-    margin-bottom: 20px;
+    color:white;
+    height: 260px;
+    padding: 40px;
+    background-image: url('Kuvat/blue-purple-futuristic-gaming-background_1128796-3333.avif');
     text-align: center;
     font-size: 34px;
 }
 
 .header2{
     grid-column: span 8;
-    margin-left: 400px;
-    background: lightblue;                      
+    
+    background: white;                      
     color:black;
     height: 100px;
     padding: 30px;
@@ -46,15 +47,14 @@ body {
 
 
 .content1, .content2, .content3, .content4 {
-    grid-column: span 3;
-    grid-row: 3;
+    grid-column: span 3;   
     border: 1px solid black;
     background-color: white;
     border-radius: 15px;
     background: none;    
     text-align: center;
     font-size: 24px;
-    height: 110px;
+    height: 120px;
     cursor: pointer;
 }
 
