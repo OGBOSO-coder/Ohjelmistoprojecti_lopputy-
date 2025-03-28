@@ -4,110 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game site</title>
-   
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: lightcyan;
-
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 10px;
-            background: white;
-        }
-
-        .header {
-            grid-column: span 8;
-            background:lightblue;          
-            color:black;
-            height: 100px;
-            padding: 20px;
-            margin-left: 400px;
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: 34px;
-        }
-
-        .header2{
-            grid-column: span 8;
-            margin-left: 400px;
-            background: lightblue;                      
-            color:black;
-            height: 100px;
-            padding: 30px;
-            text-align: center;
-            font-size: 28px;
-        }
-
-        
-
-        .content1, .content2, .content3, .content4 {
-            grid-column: span 3;
-            grid-row: 3;
-            border: 1px solid black;
-            border-radius: 15px;
-            background: none;    
-            text-align: center;
-            font-size: 24px;
-            height: 100px;
-            cursor: pointer;
-        }
-
-        .acontent {
-            grid-column: span 12;
-            height: 500px;
-            background-color: rgb(175, 235, 175);
-            border:1px solid black;
-            font-size: 40px;
-            color: black;
-            text-align: center;
-            padding: 250px;
-            
-
-        }
-
-        .footer {
-            grid-column: span 12;
-            height: 100px;
-            background:white;          
-            color:black;
-            align-self: center;
-            text-align: center;
-            font-size: 20px;
-
-        }
-
-        @media (max-width: 768px) {
-            .content1, .content2 {
-                grid-column: span 12;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+<header>
+    <div class="header">GigaMega_GameSite</div>
+    <div class="header2">Pelilista</div>
+</header>
 <body>
+
+    
+    
     <div class="container">
-        <div class="header">GigaMega_GameSite</div>
-        <div class="header2">Pelilista</div>
         <div class="content1"><a href="Hirsipuupeli/Hirsipuu.html"><img src="Kuvat/hirsipuu.png" alt="Hirsipuukuva" height="100" width="140">
         </a> </div>
-        <div class="content2"><a href="Klikkeripeli/Klikkeripeli.html">*Peli 2* TBA</a></div>
+        <div class="content2"><a href="Klikkeripeli/Klikkeripeli.html"><img src ="kuvat/cursor.jpg" alt ="kursori" height="100" width="140">
+        </a></div>
         <div class="content3">*Peli 3* TBA </div>
         <div class="content4">*Peli 4* TBA </div>
         <div class="acontent">Tähän sisältöä myöhemmin ONGFRFR</div>
-        <div class="footer"> Trademark OGBOSO Group</div>
+        
     </div>
+    <footer class="footer">
+         &#8482; OGBOSO Group
+    </footer>
 </body>
 </html>
