@@ -1,5 +1,42 @@
 <!DOCTYPE html>
 <html lang="fi">
+
+<style>
+    body{
+        text-align: center;
+        background-color: lightcyan;
+    }
+
+    h1{
+        font-size: 40px;
+        margin: 25px;
+    }
+
+    p1{
+        font-size: 20px;
+        margin: 50px;
+    }
+
+    p2{
+        font-size: 15;
+
+    }
+
+    button{
+        background-color: red;
+        border-radius: 20px;
+        padding: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: 15px;
+        cursor:pointer;
+    }
+    .napit{
+        margin: 25px;
+    }
+    
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +44,11 @@
 </head>
 <body>
     <h1>Peli</h1>
-    <p>Pisteet: <span id="Pisteet"></span></p>
-    <button onclick="Nappi()">Click</button>
-    <button onclick="Kehitys1()">Kehitys1</button>
+    <p1>Pisteet: <span id="Pisteet"></span></p1>
+    <p2><span id="infoText"></span></p2>
+    <div class="napit">
+        <button onclick="Nappi()">Click<span</button>
+        <button onclick="Kehitys1()">Kehitys1</button>    
+    </div>
 </body>
 <script src="Klikkeripeli.js"></script>
