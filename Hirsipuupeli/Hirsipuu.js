@@ -8,6 +8,12 @@ document.getElementById('arvattavaSana').textContent = arvattuSana;
 document.getElementById('elama').textContent = eläma;
 document.getElementById('arvatutKirjaimet').textContent = '';
 
+document.addEventListener('keydown', function(event) {
+    console.log(event.key); // Logs the key pressed
+    if (event.key === "Enter") {
+        Tarkastaja(); // Calls the Tarkastaja function when Enter is pressed
+    }
+});
 function Tarkastaja() {
     var arvaus = document.getElementById('arvaus').value.toLowerCase();
     var uusiArvattuSana = '';
@@ -32,15 +38,210 @@ function Tarkastaja() {
         eläma--;
         console.log("Sinulla on " + eläma + " elämää jäljellä.");
         document.getElementById('elama').textContent = eläma;
+        vaaraSana(eläma);
         
         if (eläma == 0) {
             console.log("Hävisit pelin!");
+            vaaraSana(eläma);
             alert("Pään poisto!");
         }
     }
 
     document.getElementById('arvatutKirjaimet').textContent += arvaus + ' ';
     document.getElementById('arvaus').value = '';
-}
+    
 
 console.log(arvattavaSana);
+}
+
+function vaaraSana(eläma) {
+    console.log("Väärä sana, sinulla on " + eläma + " yritystä jäljellä.");
+    if (eläma == 6) {
+        console.log("Väärä kirjain, sinulla on 6 yritystä jäljellä.");
+        console.log(" -------");
+        console.log(" |     |");
+        console.log("       |");
+        console.log("       |");
+        console.log("       |");
+        console.log("       |");
+        console.log("----------");
+    }
+
+    if (eläma == 5) {
+        console.log("Väärä kirjain, sinulla on 5 yritystä jäljellä.");
+        console.log(" -------");
+        console.log(" |     |");
+        console.log(" O     |");
+        console.log("       |");
+        console.log("       |");
+        console.log("       |");
+        console.log("       |");
+        console.log("----------");
+    }
+
+    if (eläma == 4) {
+        console.log("Väärä kirjain, sinulla on 4 yritystä jäljellä.");
+        console.log(" -------");
+        console.log(" |     |");
+        console.log(" O     |");
+        console.log(" |     |");
+        console.log(" |     |");
+        console.log("       |");
+        console.log("       |");
+        console.log("       |");
+        console.log("       |");
+        console.log("----------");
+    }
+
+    if (eläma == 3) {
+        console.log("Väärä kirjain, sinulla on 3 yritystä jäljellä.");
+        console.log("  -------");
+        console.log("  |     |");
+        console.log("  O     |");
+        console.log(" \\|     |");
+        console.log("  |     |");
+        console.log("        |");
+        console.log("        |");
+        console.log("        |");
+        console.log("        |");
+        console.log(" ----------");
+    }
+
+    if (eläma == 2) {
+        console.log("Väärä kirjain, sinulla on 2 yritystä jäljellä.");
+        console.log("  -------");
+        console.log("  |     |");
+        console.log("  O     |");
+        console.log(" \\|/    |");
+        console.log("  |     |");
+        console.log("        |");
+        console.log("        |");
+        console.log("        |");
+        console.log("        |");
+        console.log(" ----------");
+    }
+
+    if (eläma == 1) {
+        console.log("Väärä kirjain, sinulla on 1 yritys jäljellä.");
+        console.log("  -------");
+        console.log("  |     |");
+        console.log("  O     |");
+        console.log(" \\|/    |");
+        console.log("  |     |");
+        console.log(" /      |");
+        console.log("        |");
+        console.log("        |");
+        console.log("        |");
+        console.log(" ----------");
+    }
+
+    if (eläma == 0) {
+        console.log("Väärä kirjain, hävisit pelin!");
+        console.log("  -------");
+        console.log("  |     |");
+        console.log("  O     |");
+        console.log(" \\|/    |");
+        console.log("  |     |");
+        console.log(" / \\    |");
+        console.log("        |");
+        console.log("        |");
+        console.log("        |");
+        console.log(" ----------");
+    }
+    let drawing = "";
+
+    if (eläma == 6) {
+        drawing = `
+ -------
+ |     |
+       |
+       |
+       |
+       |
+----------
+`;
+    }
+
+    if (eläma == 5) {
+        drawing = `
+ -------
+ |     |
+ O     |
+       |
+       |
+       |
+----------
+`;
+    }
+
+    if (eläma == 4) {
+        drawing = `
+ -------
+ |     |
+ O     |
+ |     |
+ |     |
+       |
+----------
+`;
+    }
+
+    if (eläma == 3) {
+        drawing = `
+  -------
+  |     |
+  O     |
+ \\|     |
+  |     |
+        |
+        |
+        |
+ ----------
+`;
+    }
+
+    if (eläma == 2) {
+        drawing = `
+  -------
+  |     |
+  O     |
+ \\|/    |
+  |     |
+        |
+        |
+        |
+ ----------
+`;
+    }
+
+    if (eläma == 1) {
+        drawing = `
+  -------
+  |     |
+  O     |
+ \\|/    |
+  |     |
+ /      |
+        |
+        |
+ ----------
+`;
+    }
+
+    if (eläma == 0) {
+        drawing = `
+  -------
+  |     |
+  O     |
+ \\|/    |
+  |     |
+ / \\    |
+        |
+        |
+ ----------
+`;
+    }
+
+    // Update the hangman drawing in the HTML
+    document.getElementById("hangmanDrawing").textContent = drawing;
+}
