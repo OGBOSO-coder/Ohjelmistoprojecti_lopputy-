@@ -45,7 +45,7 @@ function Kehitys2(){
     document.getElementById('infoText').textContent = infoText;
     pisteet = pisteet - kehitys2Hinta;
     document.getElementById('Pisteet').textContent = pisteet;
-    kehitys2Hinta = kehitys2Hinta * 2.5;
+    kehitys2Hinta = kehitys2Hinta * 2;
     document.getElementById('kehitys2Hinta').textContent = kehitys2Hinta;
     pisteetPerClick = pisteetPerClick + 1;
 }
