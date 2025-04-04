@@ -5,21 +5,32 @@
     body{
         text-align: center;
         background-color: lightcyan;
+        border: 2px solid black;
     }
 
     h1{
         font-size: 40px;
         margin: 25px;
+        
     }
 
     p1{
         font-size: 20px;
-        margin: 50px;
+        margin: 15px;
     }
 
     p2{
         font-size: 15;
+        margin: 15px;
+    }
 
+    .pisteet{
+        margin: 5px;
+        border: 1px solid black;
+    }
+
+    .infoteksti{
+        margin: 15px;
     }
 
     button{
@@ -29,10 +40,13 @@
         padding-left: 25px;
         padding-right: 25px;
         margin: 15px;
+        margin-top: 5px;
         cursor:pointer;
     }
-    .napit{
+    .kehitysNapit{
         margin: 25px;
+        padding: 15px;
+        border: 1px solid black;
     }
     
 </style>
@@ -44,11 +58,24 @@
 </head>
 <body>
     <h1>Peli</h1>
-    <p1>Pisteet: <span id="Pisteet"></span></p1>
-    <p2><span id="infoText"></span></p2>
-    <div class="napit">
-        <button onclick="Nappi()">Click<span</button>
-        <button onclick="Kehitys1()">Kehitys1</button>    
+
+    <div class="pisteet">
+        <p1>Pisteet: <span id="Pisteet"></span></p1>
     </div>
+
+    <div class="infoteksti">
+        <p2><span id="infoText"></span></p2>
+    </div>
+
+    <div class="clickNappi">
+        <button onclick="Nappi()">Click</button>
+    </div>
+
+    <div class="kehitysNapit">
+        <button onclick="Kehitys1()">Kehitä automatio(Hinta: <span id="kehitys1Hinta"></span>)</button>
+        <button onclick="Kehitys2()">Kehitä click(Hinta: <span id="kehitys2Hinta"></span>)</button>    
+    </div>
+
+    <script src="Klikkeripeli.js"></script>
+
 </body>
-<script src="Klikkeripeli.js"></script>
