@@ -58,6 +58,8 @@ body {
     cursor: pointer;
 }
 
+
+
 .acontent {
     grid-column: span 12;
     height: 100px;
