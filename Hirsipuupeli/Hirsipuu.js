@@ -2,7 +2,7 @@
 var sanat = ["kissa", "koira", "auto", "talo", "koulu", "tietokone", "puhelin", "kukka", "kirja", "lehti"];
 var arvattavaSana = sanat[Math.floor(Math.random() * sanat.length)];
 var eläma = 6;
-var arvattuSana = Array(arvattavaSana.length).fill('_ ').join('');
+var arvattuSana = Array(arvattavaSana.length).fill('_').join('');
 
 document.getElementById('arvattavaSana').textContent = arvattuSana;
 document.getElementById('elama').textContent = eläma;
@@ -21,6 +21,7 @@ document.getElementById('arvaus').addEventListener('keypress', function(event) {
         }
     }
 });
+
 function Tarkastaja() {
     var arvaus = document.getElementById('arvaus').value.toLowerCase();
     var uusiArvattuSana = '';
@@ -49,16 +50,18 @@ function Tarkastaja() {
         
         if (eläma == 0) {
             console.log("Hävisit pelin!");
-            vaaraSana(eläma);
-            alert("Pään poisto!");
+            alert("Hävisit pelin! Oikea sana oli: " + arvattavaSana);
         }
+    }
+
+    // Check if the player has won
+    if (!arvattuSana.includes('_')) {
+        console.log("Voitit pelin!");
+        alert("Onneksi olkoon! Voitit pelin!");
     }
 
     document.getElementById('arvatutKirjaimet').textContent += arvaus + ' ';
     document.getElementById('arvaus').value = '';
-    
-
-console.log(arvattavaSana);
 }
 
 function vaaraSana(eläma) {
