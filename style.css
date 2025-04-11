@@ -20,6 +20,8 @@ body {
 .container {
     flex: 1;
     display: grid;
+    margin-left: 1em;
+    margin-right: 1em;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
     background: white;
@@ -66,6 +68,7 @@ body {
 
 .acontent {
     grid-column: span 12;
+    margin-left: 1em;
     height: 100px;
     font-size: 40px;
     color: black;
@@ -74,6 +77,8 @@ body {
 }
 .abcontent{
     grid-column: span 12;
+    margin-left: 1em;
+    margin-right: 1em;
     height: 15em;
     border:1px solid black;
     font-size: 24px;
