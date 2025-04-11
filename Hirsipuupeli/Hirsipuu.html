@@ -7,7 +7,8 @@
     <script src="Hirsipuu.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body  id="" class="hirsipuu-body">
+    <div id ="peli">
     <h1>Peli</h1>
     <p>Arvattava sana: <span id="arvattavaSana"></span></p>
     <p>Elämiä jäljellä: <span id="elama"></span></p>
@@ -16,5 +17,10 @@
     <button id="arvaaButton" onclick="Tarkastaja()">Arvaa</button>
     <p>Hangman Drawing:</p>
     <pre id="hangmanDrawing"></pre>
+    </div>
+</body>
+<body id="pelinaloitus">
+    <button onclick="aloitaPeli()">Aloita</button>
+    <input type="text" id="nimi" placeholder="Arvaa kirjain">
 </body>
 </html>
