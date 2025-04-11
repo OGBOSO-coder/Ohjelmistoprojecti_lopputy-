@@ -12,6 +12,10 @@ document.getElementById('kehitys1Hinta').textContent = kehitys1Hinta;
 
 document.getElementById('kehitys2Hinta').textContent = kehitys2Hinta;
 
+document.getElementById('pisteetPerClick').textContent = pisteetPerClick;
+
+document.getElementById('pisteetPerSec').textContent = pisteetPerSec;
+
 function Nappi(){
 pisteet = pisteet + pisteetPerClick;
 document.getElementById('Pisteet').textContent = pisteet;
@@ -32,6 +36,7 @@ document.getElementById('Pisteet').textContent = pisteet;
 kehitys1Hinta = kehitys1Hinta * 3;
 document.getElementById('kehitys1Hinta').textContent = kehitys1Hinta;
 pisteetPerSec = pisteetPerSec + 1;
+document.getElementById('pisteetPerSec').textContent = pisteetPerSec;
 }
 
 function Kehitys2(){
@@ -48,6 +53,7 @@ function Kehitys2(){
     kehitys2Hinta = kehitys2Hinta * 2;
     document.getElementById('kehitys2Hinta').textContent = kehitys2Hinta;
     pisteetPerClick = pisteetPerClick + 1;
+    document.getElementById('pisteetPerClick').textContent = pisteetPerClick;
 }
 
 setInterval(function() {

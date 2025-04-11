@@ -20,17 +20,32 @@
     }
 
     p2{
-        font-size: 15;
+        font-size: 15px;
         margin: 15px;
+    }
+
+    p3{
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    p4{
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    .päivitykset{
+        text-align: right;
+        padding: 20px;
     }
 
     .pisteet{
         margin: 5px;
-        border: 1px solid black;
     }
 
     .infoteksti{
         margin: 15px;
+        padding: 10px;
     }
 
     button{
@@ -46,7 +61,6 @@
     .kehitysNapit{
         margin: 25px;
         padding: 15px;
-        border: 1px solid black;
     }
     
 </style>
@@ -57,10 +71,19 @@
     <title>Klikkeripeli</title>
 </head>
 <body>
-    <h1>Peli</h1>
+    <h1>Klikkeripeli</h1>
 
     <div class="pisteet">
         <p1>Pisteet: <span id="Pisteet"></span></p1>
+    </div>
+
+    <div class="päivitykset">
+        <div class="perClickText">
+            <p3>Pisteet per click: <span id="pisteetPerClick"></span></p3>
+        </div>
+        <div class="perSecText">
+            <p4>Pisteet per sec: <span id="pisteetPerSec"></span></p4>
+        </div>
     </div>
 
     <div class="infoteksti">
