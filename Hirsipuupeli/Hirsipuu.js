@@ -1,11 +1,11 @@
 //hirsipuu peli
 function aloitaPeli() {
-    // Show the body with id "peli"
     document.getElementById('peli').style.display = 'block';
+    document.getElementById('nimi').style.display = 'none';
+    document.getElementById('ohjeistus').style.display = 'none';
 
-    // Optionally, hide the "Aloita" button
     document.querySelector('button[onclick="aloitaPeli()"]').style.display = 'none';
-
+}
     // Initialize the game logic here
     var sanat = ["kissa", "koira", "auto", "talo", "koulu", "tietokone", "puhelin", "kukka", "kirja", "lehti"];
     var arvattavaSana = sanat[Math.floor(Math.random() * sanat.length)];
@@ -28,7 +28,7 @@ function aloitaPeli() {
                 document.getElementById('arvaaButton').click();
             }
             else {
-                alert("Anna kirjain!");
+                alert("Anna nimi!");
             }
         }
     });
@@ -273,4 +273,3 @@ function aloitaPeli() {
         // Update the hangman drawing in the HTML
         document.getElementById("hangmanDrawing").textContent = drawing;
     }
-}

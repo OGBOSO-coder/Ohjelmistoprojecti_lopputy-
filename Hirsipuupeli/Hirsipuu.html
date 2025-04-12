@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body  id="" class="hirsipuu-body">
+    <div id="aloitus">
+        <h1>Tervetuloa Hirsipuu-peliin!</h1>
+        <p id="ohjeistus">Lisää nimi ja aloita peli.</p>
+        <button onclick="aloitaPeli()">Aloita</button>
+        <input type="text" id="nimi" placeholder="Arvaa kirjain">
+    </div>
     <div id ="peli">
-    <h1>Peli</h1>
     <p>Arvattava sana: <span id="arvattavaSana"></span></p>
     <p>Elämiä jäljellä: <span id="elama"></span></p>
     <p>Arvatut kirjaimet: <span id="arvatutKirjaimet"></span></p>
@@ -20,7 +25,6 @@
     </div>
 </body>
 <body id="pelinaloitus">
-    <button onclick="aloitaPeli()">Aloita</button>
-    <input type="text" id="nimi" placeholder="Arvaa kirjain">
+
 </body>
 </html>
